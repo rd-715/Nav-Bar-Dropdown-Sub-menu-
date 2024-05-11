@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: black; */
+    background-image: url(close-up-person-s-hand-holding-smart-phone-with-smoothie-jar_23-2148041864.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-bar {
+    background: rgb(25, 101, 25);
+    text-align: center;
+}
+
+.menu-bar ul {
+    list-style-type: none;
+    display: inline-flex;
+    /* justify-content: space-evenly ; */
+    align-items: center;
+
+}
+
+.menu-bar ul li {
+    width: 130px;
+    margin: 15px;
+    padding: 15px;
+
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.active, .menu-bar ul li:hover {
+    background-color: #2bab0d;
+    border-radius: 5px;
+}
+
+.menu-bar .fa-solid {
+    margin-right: 8px;
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -15px;
+    background: rgb(25, 101, 25);
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+    width: 150px;
+    padding: 10px;
+    border-radius: 0;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    text-align: left;
+    /* opacity: 0.7; */
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a {
+    opacity: 0.7;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+    opacity: 1;
+}
+
+.fa-angle-right {
+    float: right;
+    color: #fff;
+}
+
+.sub-menu-2 {
+    display: none;
+}
+
+
+.hover-me:hover .sub-menu-2 {
+    display: block;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: rgb(25, 101, 25);
+
+    
+}
